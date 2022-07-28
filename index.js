@@ -11,6 +11,10 @@ router.get('/',(req,res)=>{
 	res.json({message:'Hula! My API works!!!'})
 })
 
+router.get('/hello',(req,res)=>{
+	res.send("Hello World!");
+});
+
 app.use('/api',router);
 
 app.listen(port);
