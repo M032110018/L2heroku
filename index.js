@@ -13,6 +13,17 @@ router.get('/',(req,res)=>{
 
 router.get('/hello',(req,res)=>{
 	res.send("Hello World!");
+	res.send("Hello World!");
+	res.send("Hello World!");
+});
+
+router.get('/goodbye/:name',(req,res)=>{
+	res.send('Goodbye '+req.params.name);
+});
+
+router.post('/sum', (req,res)=>{
+	res.send("The sum is "+(req.body.num1+req.body.num2));
+	
 });
 
 app.use('/api',router);
