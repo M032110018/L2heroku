@@ -13,8 +13,6 @@ router.get('/',(req,res)=>{
 
 router.get('/hello',(req,res)=>{
 	res.send("Hello World!");
-	res.send("Hello World!");
-	res.send("Hello World!");
 });
 
 router.get('/goodbye/:name',(req,res)=>{
